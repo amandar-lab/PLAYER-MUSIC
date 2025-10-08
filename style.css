@@ -1,0 +1,151 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s ease;
+}
+
+.phone {
+  width: 300px;
+  height: 600px;
+  border-radius: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.controls-wrapper {
+  position: relative;
+  width: 280px;          
+  height: 88px;          
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bg-box {
+  position: absolute;
+  left: 50%;
+  top:49px;
+  transform: translate(-50%, -50%);
+  z-index: 0;             
+  width: 210px;           
+  height: 100px;
+  pointer-events: none;   
+}
+
+.player-container {
+  margin-top:360px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+#progress {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 8px;
+  background-color: aqua;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: rgb(255, 59, 92);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.controls {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls img {
+  width: 50px;
+  cursor: pointer;
+}
+
+#ctrlIcon {
+  width: 65px; 
+}
+
+.generos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; 
+}
+
+.genero-btn {
+  position: absolute;
+  pointer-events: auto; 
+  background-color: #1DB954;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+.genero-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(255,255,255,0.3);
+}
+
+
+.genero-btn:nth-child(1) {
+  top: 10%;
+  left: 8%;
+  background-color: #ff4b5c; 
+}
+
+.genero-btn:nth-child(2) {
+  top: 25%;
+  right: 10%;
+  background-color: #1f8ef1; 
+}
+
+.genero-btn:nth-child(3) {
+  bottom: 20%;
+  left: 15%;
+  background-color: #f5a623; /* Eletrônica */
+}
+
+.genero-btn:nth-child(4) {
+  top: 60%;
+  right: 25%;
+  background-color: #9b59b6; /* Hip Hop (se quiser adicionar) */
+}
+
+.genero-btn:nth-child(5) {
+  bottom: 10%;
+  right: 10%;
+  background-color: #2ecc71; /* Jazz */
+}
+

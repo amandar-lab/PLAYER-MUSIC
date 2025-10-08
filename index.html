@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player de Música</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="phone">
+    
+      <div class="player-container">
+        <!-- Barra de progresso do aplicativo -->
+        <input type="range" value="0" id="progress">
+
+        <div class="controls-wrapper">
+          <img src="images/Grupo 20.png" class="bg-box" alt="caixa laranja">
+        <div class="controls"> 
+          <img src="images/Grupo 19.png" class="volta" alt="Voltar">
+          <div onclick="playPause()">
+            <img src="images/Grupo 18.png" id="ctrlIcon" alt="Play/Pause">
+          </div>
+          <img src="images/Grupo 17.png" class="proxima" alt="Próxima">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+ <audio id="song">
+  <source src="musicas/angel numbers.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+<div class="generos">
+  <button class="genero-btn" onclick="mudarPlaylist('https://open.spotify.com/playlist/2APVTN27nKIFNMrJ8GXo8U?si=9e8589d4606346f2')">Pop</button>
+  <button class="genero-btn" onclick="mudarPlaylist('https://open.spotify.com/playlist/37i9dQZF1DXcF6B6QPhFDv?si=f1c5f2d61f1842cb')">Rock</button>
+  <button class="genero-btn" onclick="mudarPlaylist('https://open.spotify.com/playlist/1BY7y711ze0nMfN8ZPuMgx?si=fffaa18c59284302')">Eletrônica</button>
+</div>
+
+
+<div id="spotify-player">
+  <iframe id="spotify-iframe"
+    style="border-radius:12px"
+    src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M"
+    width="100%"
+    height="352"
+    frameborder="0"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy">
+  </iframe>
+</div>
+
+
+<script src="script.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+
+
