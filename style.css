@@ -139,13 +139,13 @@ body, html {
 
 .genero-btn:nth-child(4) {
   top: 60%;
-  right: 25%;
-  background-color: #9b59b6; /* Hip Hop (se quiser adicionar) */
+  right: 10%;
+  background-color: #9b59b6; 
 }
 
 .genero-btn:nth-child(5) {
   bottom: 10%;
-  right: 10%;
-  background-color: #2ecc71; /* Jazz */
+  right: 40%;
+  background-color: #2ecc71; 
 }
 
